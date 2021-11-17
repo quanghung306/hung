@@ -1,6 +1,3 @@
-<html>
-
-
 let productList = [
     {
         name: "iphone 7",
@@ -19,13 +16,12 @@ let productList = [
         quantity: 1
     },
 ];
-        var arr=[]
-        for(let Sanpham of productList){
-        if(Sanpham.quantity<10){
-            console.log("  hang sap het han") ;
-            arr.push(Sanpham.quantity+Sanpham.name);
-            console.log(arr);
-        }
-    
+    var arr=[]
+    for(let Sanpham of productList){
+     if(Sanpham.quantity<10){
+        console.log("  hang sap het han") ;
+        arr.push(Sanpham.name);
+        console.log(arr);
     }
-    </html>
+   
+}
