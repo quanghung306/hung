@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+<div class="calculate-box">
+    <p>Please input the first number:</p>
+    <input type="text" placeholder="First number" name="first-number">
+    <p>Please input the second number:</p>
+    <input type="text" placeholder="Second number" name="second-number">
+    <input type="button" value="Calculate" onclick="calculateResult()">
+    <div class="result"></div>
+</div>
+<script>
+    function calculateResult() {
+    var n1 = document.getElementsByName(`first-number`)[0].value
+    var n2 = document.getElementsByName(`second-number`)[0].value 
+    var sum = Number.parseInt(n1) + Number.parseInt(n2)
+    document.getElementsByClassName(`result`)[0].innerHTML= `result is :${sum}`
+    }
+</script>
+</body>
+</html>
